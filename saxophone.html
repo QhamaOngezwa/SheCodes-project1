@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>History of the Saxophone</title>
+    <style>
+      body {
+        background: linear-gradient(to right, /*#be8d49*/ #b48f61, #f7e0b2);
+        border: #41271d 4px solid;
+      }
+      h1 {
+        text-align: center;
+        line-height: 18px;
+        font-size: 98px;
+        font-weight: bold;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        color: #4b3621;
+      }
+      h2 {
+        text-align: center;
+        font-size: 28px;
+        font-weight: bolder;
+        font-family: "Cinzel", serif;
+        color: #844e27;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        line-height: 16px;
+        padding: 30px;
+      }
+
+      .horizontal-line {
+        border: none;
+        height: 3px;
+        background-color: #41271d;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 15px 20px;
+      }
+      .image-container {
+        display: flex;
+        gap: 90px;
+      }
+
+      .image-container img {
+        width: 350px;
+        height: 450px;
+        margin-left: 30px;
+      }
+      .image-container p {
+        font-size: 20px;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: bold;
+        color: #41271d;
+        margin-top: 120px;
+        margin-left: 50px;
+      }
+      .read-more {
+        color: black;
+        text-decoration: underline;
+      }
+      .read-more:hover {
+        color: #844e27;
+        cursor: pointer;
+      }
+
+      .video-container {
+        width: 950px;
+        height: 450px;
+        margin-top: 48px;
+        max-width: 100%;
+      }
+
+      .video-container iframe {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+      .footer {
+        align-items: center;
+        display: flex;
+        gap: 30px;
+      }
+      .footer h3 {
+        color: #41271d;
+        font-weight: bold;
+        font-size: 19px;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .footer button {
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px 30px;
+        color: white;
+        background-color: #f7001f;
+        border: #f7001f 3px solid;
+        border-radius: 23px;
+        cursor: pointer;
+        box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.7);
+        transition: 0.3s ease-in-out;
+      }
+      .footer button:hover {
+        color: bisque;
+        border: #844e27 3px solid;
+        background-color: #844e27;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1><em>Saxy - Sounds</em></h1>
+
+      <hr class="horizontal-line" />
+      <h2><em>Nothing hits like the sound of a good ol' Sax</em></h2>
+
+      <div class="image-container">
+        <img
+          src="https://i.pinimg.com/474x/51/20/4e/51204ed0fc7d8829c434cf63e7bdd2f2.jpg"
+          alt="A man playing a Saxophone"
+        />
+
+        <p>
+          <strong>
+            From the smokey streets of 19th-century Paris to the golden glow of
+            jazz clubs in Harlem, the saxophone has carved out a sound all on
+            its own — bold, sultry, and unmistakable. This is more than just an
+            instrument. It’s a storyteller. A symbol of rebellion, romance, and
+            rhythm. Step into the history of the sax, and hear how its voice
+            shaped the soundtrack of generations.<a
+              href="https://en.wikipedia.org/wiki/Saxophone"
+              target="_blank"
+              ><span class="read-more"> Read more.</span></a
+            ></strong
+          >
+        </p>
+      </div>
+      <br />
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/OTcb262rqRA?si=fDKxjXsbNbmhTMy7"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <br />
+      <div class="footer">
+        <h3>Want to learn how to play?</h3>
+        <button>Sign Up</button>
+      </div>
+      <br />
+
+      <script>
+        function signUp() {
+          let name = prompt("Name");
+          let country = prompt("Country");
+
+          if (country.toLowerCase() === "south africa") {
+            let email = prompt("Email address");
+            alert("Thank you " + name + "👋. We will be in touch!");
+          } else {
+            alert("You cannot SignUp");
+          }
+        }
+        let button = document.querySelector("button");
+        button.addEventListener("click", signUp);
+      </script>
+    </div>
+  </body>
+</html>
